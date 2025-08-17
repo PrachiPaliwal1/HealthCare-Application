@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.threehero.myhealth.main.Cart">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:background="#14726A"
+        android:padding="6dp"
+        android:src="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/cart_pagelabel"
+        android:layout_width="305dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/back_btn"
+        android:background="#199287"
+        android:paddingStart="120dp"
+        android:paddingTop="10dp"
+        android:text="Cart"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="62dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/cart_pagelabel"
+        android:background="#14726A"
+        android:padding="10dp"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/empty_cartimg"
+        android:layout_width="match_parent"
+        android:layout_height="243dp"
+        android:layout_below="@id/cart_pagelabel"
+        android:padding="20dp"
+        android:src="@drawable/emptycart"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/empty_msg"
+        android:layout_width="match_parent"
+        android:layout_height="436dp"
+        android:layout_below="@id/empty_cartimg"
+        android:drawablePadding="5dp"
+        android:text="Cart is Empty!!\nAdd Medicines.."
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_rview"
+        android:layout_width="match_parent"
+        android:layout_height="619dp"
+        android:layout_below="@id/cart_pagelabel"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buy_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FF0A6F65"
+        android:text="Buy"
+        android:textColor="#050505"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/clear_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FF0A6F65"
+        android:text="Clear"
+        android:textColor="#050505"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

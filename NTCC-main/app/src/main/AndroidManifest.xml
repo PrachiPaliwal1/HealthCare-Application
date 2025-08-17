@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.threehero.myhealth">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CareConnect"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyHealth"
+        tools:targetApi="31">
+        <activity
+            android:name=".main.LabTestBookingHistory"
+            android:exported="false"
+            android:theme="@style/Theme.MyHealth" />
+        <activity
+            android:name=".main.LabTestBooking"
+            android:exported="false"
+            android:theme="@style/Theme.MyHealth" />
+        <activity
+            android:name=".main.LabTests"
+            android:exported="false"
+            android:theme="@style/Theme.MyHealth" />
+        <activity
+            android:name=".main.Splash"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.RegPg"/>
+        <activity android:name=".main.LabTests" />
+        <activity android:name=".main.Doctor" />
+        <activity android:name=".main.ArticlesActivity" />
+        <activity android:name=".main.Medicine" />
+        <activity android:name=".main.LoginPage" />
+        <activity android:name=".main.Home" />
+        <activity android:name=".main.OrderDetails" />
+        <activity android:name=".main.Profile" />
+        <activity android:name=".main.Cart" />
+    </application>
+
+</manifest>

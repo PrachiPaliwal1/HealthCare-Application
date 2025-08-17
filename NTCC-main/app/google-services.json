@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "346893275412",
+    "project_id": "myhealth-b35eb",
+    "storage_bucket": "myhealth-b35eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346893275412:android:8f06372de4894925e0f201",
+        "android_client_info": {
+          "package_name": "com.threehero.myhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346893275412-mqo1fabsp8f0s4r4h86grq348enfqg1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.threehero.myhealth",
+            "certificate_hash": "9a986bc0fbe3dd1271b1dde2f0eaf0d639933fc9"
+          }
+        },
+        {
+          "client_id": "346893275412-9el3288i3fin3314tiqtmnojcksggrvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZXbCms_NBlF_-Q0toymZT1RAu8CpxWN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346893275412-9el3288i3fin3314tiqtmnojcksggrvh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

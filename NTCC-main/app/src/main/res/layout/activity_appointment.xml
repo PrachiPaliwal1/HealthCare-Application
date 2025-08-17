@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back button -->
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:background="#14726A"
+        android:padding="6dp"
+        android:src="@drawable/back_icon"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Home button -->
+    <ImageView
+        android:id="@+id/home_btn"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:background="#14726A"
+        android:padding="6dp"
+        android:src="@drawable/home"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Appointment label -->
+
+    <!-- Doctor information -->
+    <TextView
+        android:id="@+id/appointment_pagelabel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_toStartOf="@id/home_btn"
+        android:layout_toEndOf="@id/back_btn"
+        android:background="#199287"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:text="Appointment"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appointment_pagelabel"
+        android:orientation="vertical">
+
+        <!-- Doctor image and details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/doctor_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/doctor_image_desc"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/doctor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Doctor Name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/doctor_speciality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Speciality"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/doctor_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fee: $1500"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Time slots -->
+        <RadioGroup
+            android:id="@+id/time_slots_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/time_slot1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time Slot 1"/>
+
+            <RadioButton
+                android:id="@+id/time_slot2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time Slot 2"/>
+
+        </RadioGroup>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/confirm_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF0A6F65"
+                android:text="Confirm"/>
+
+            <Button
+                android:id="@+id/clear_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF0A6F65"
+                android:text="Clear"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "953432805968",
+    "project_id": "ntcc-66d9f",
+    "storage_bucket": "ntcc-66d9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953432805968:android:6f57ab00a721362df97755",
+        "android_client_info": {
+          "package_name": "com.threehero.myhealth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDStuDwVeq60nIB3cOH0369rzckW1cWrJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

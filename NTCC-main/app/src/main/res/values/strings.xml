@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">YourAppName</string>
+    <string name="default_web_client_id">346893275412-mqo1fabsp8f0s4r4h86grq348enfqg1t.apps.googleusercontent.com</string>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Transgender</item>
+    </string-array>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="back_button_desc">Description of the back button</string>
+    <string name="home_button_desc">Description of the home button</string>
+    <string name="doctor_image_desc">Description of the doctor image</string>
+
+
+</resources>

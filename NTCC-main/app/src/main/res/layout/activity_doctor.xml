@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.Doctor">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#14726A"
+        android:padding="5dp"
+        android:src="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/doc_pagelabel"
+        android:layout_width="292dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/back_btn"
+        android:background="#199287"
+        android:paddingTop="10dp"
+        android:text="Doctors"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/cart_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/doc_pagelabel"
+        android:background="#14726A"
+        android:src="@drawable/carthome" />
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doc_pagelabel"
+        android:background="@drawable/edit_text_back"
+        android:drawableStart="@drawable/ic_search"
+        android:hint="Search for doctors"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="#C8C2C2"
+        android:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar" />
+</RelativeLayout>
